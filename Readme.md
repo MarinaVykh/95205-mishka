@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Выхристюк](https://up.htmlacademy.ru/adaptive/9/user/95205).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
 ---
 
