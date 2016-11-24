@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="page-header">
+  <a class="page-header__logo" href="">
+    <img src="./img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+  </a>
+
+  <nav class="main-nav  main-nav--closed  main-nav--nojs">
+
+    <span class="main-nav__toggle"></span>
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="">Каталог товаров</a></li>
+      <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+      <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
+      <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: пока пуста</a></li>
+    </ul>
+
+    <div class="main-nav  main-nav--item-active">
+      <h1 class="main-nav__item-name">Вязание на заказ</h1>
+    </div>
+  </nav>
+</header>
+
+<main class="form">
+  <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+    форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+  <form action="" method="">
+
+    <div class="form__type">
+      <div class="form__parameter">Тип</div>
+
+      <label class="field-radio">
+        <input class="field-radio__input" type="radio" value="Аксессуар для интерьера" checked>
+        <div class="field-radio__name">Аксессуар для интерьера</div>
+      </label>
+
+      <label class="field-radio">
+        <input class="field-radio__input" type="radio" value="Детская игрушка" checked>
+        <div class="field-radio__name">Детская игрушка</div>
+      </label>
+    </div>
+
+    <div class="form__color">
+      <div class="form__parameter">Цвет</div>
+
+      <label class="field-checkbox">
+        <input class="field-checkbox__input" type="checkbox" value="Белый" checked>
+        <div class="field-checkbox__name">Белый</div>
+      </label>
+
+      <label class="field-checkbox">
+        <input class="field-checkbox__input" type="checkbox" value="Серый" checked>
+        <div class="field-checkbox__name">Серый</div>
+      </label>
+
+      <label class="field-checkbox">
+        <input class="field-checkbox__input" type="checkbox" value="Тиффани">
+        <div class="field-checkbox__name">Тиффани</div>
+      </label>
+
+      <label class="field-checkbox">
+        <input class="field-checkbox__input" type="checkbox" value="Черный">
+        <div class="field-checkbox__name">Черный</div>
+      </label>
+
+      <label class="field-checkbox">
+        <input class="field-checkbox__input" type="checkbox" value="Розовый">
+        <div class="field-checkbox__name">Розовый</div>
+      </label>
+
+      <label class="field-checkbox">
+        <input class="field-checkbox__input" type="checkbox" value="Оранжевый">
+        <div class="field-checkbox__name">Оранжевый</div>
+      </label>
+    </div>
+
+    <div class="form__full-name">
+      <div class="form__parameter">ФИО</div>
+
+      <label class="field-text">
+        <div class="field-text__name">Имя:</div>
+        <div class="field-text__input-wrap">
+          <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+      </label>
+
+      <label class="field-text">
+        <div class="field-text__name">Фамилия:</div>
+        <div class="field-text__input-wrap">
+          <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию">
+        </div>
+      </label>
+
+      <label class="field-text">
+        <div class="field-text__name">Отчество:</div>
+        <div class="field-text__input-wrap">
+          <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
+        </div>
+      </label>
+    </div>
+
+    <div class="form__tel">
+      <div class="form__parameter">Тел</div>
+
+      <label class="field-text">
+        <div class="field-text__input-wrap">
+          <input class="field-text__input" type="tel" name="tel" placeholder="+7 XXX XX XX">
+        </div>
+      </label>
+    </div>
+
+    <div class="form__email">
+      <div class="form__parameter">E-mail</div>
+
+      <label class="field-text">
+        <div class="field-text__input-wrap">
+          <input class="field-text__input" type="email" name="email" placeholder="Ваш Email">
+        </div>
+      </label>
+    </div>
+
+    <div class="form__additionally">
+      <div class="form__parameter">Доп</div>
+
+      <label class="field-textarea">
+        <div class="field-textarea__input-wrap">
+          <textarea class="field-textarea__input" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </label>
+    </div>
+
+    <div class="form__warning">Все поля обязательны для заполнения</div>
+
+    <div class="form__submit-order">
+      <input class="form__submit-order  form__submit-order--btn  btn" type="submit" value="Отправить заказ">
+    </div>
+  </form>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__social">
+    <div class="social-links">
+      <a class="social-link social-link--instagram  text-hide" href="https://www.instagram.com/htmlacademy">Instagram</a>
+      <a class="social-link social-link--facebook  text-hide" href="https://www.facebook.com/htmlacademy">Facebook</a>
+      <a class="social-link social-link--twitter  text-hide" href="https://www.twitter.com/htmlacademy">Twitter</a>
+    </div>
+  </div>
+
+  <div class="page-footer__copyright">
+    <span class="page-footer__copyright-title">Разработано</span>
+    <a class="page-footer__copyright-link  text-hide" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
+
+<form class="add-basket" action="" method="post">
+  <h1 class="add-basket__title">Добавить<br> в корзину</h1>
+
+  <p class="add-basket__text">Выберите размер:</p>
+
+  <div class="add-basket__items">
+    <input class="add-basket__item" type="radio" name="size" value="S" checked>
+    <input class="add-basket__item" type="radio" name="size" value="M">
+    <input class="add-basket__item" type="radio" name="size" value="L">
+  </div>
+
+  <input type="submit" value="Добавить" class="btn  add-basket__btn">
+</form>
+
+</body>
+</html>
