@@ -38,55 +38,55 @@
 
   <form action="" method="">
 
-    <div class="form__type">
+    <div class="form__order-settings">
       <div class="form__parameter">Тип</div>
 
       <label class="field-radio">
-        <input class="field-radio__input" type="radio" value="Аксессуар для интерьера" checked>
-        <div class="field-radio__name">Аксессуар для интерьера</div>
+        <input class="field-radio__input" type="radio" name="field-radio" value="" checked>
+        <span class="field-radio__name">Аксессуар для интерьера</span>
       </label>
 
       <label class="field-radio">
-        <input class="field-radio__input" type="radio" value="Детская игрушка" checked>
-        <div class="field-radio__name">Детская игрушка</div>
+        <input class="field-radio__input" type="radio" name="field-radio" value="">
+        <span class="field-radio__name">Детская игрушка</span>
       </label>
     </div>
 
-    <div class="form__color">
+    <div class="form__order-settings">
       <div class="form__parameter">Цвет</div>
 
       <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="Белый" checked>
-        <div class="field-checkbox__name">Белый</div>
+        <input class="field-checkbox__input" type="checkbox" value="" checked>
+        <span class="field-checkbox__name">Белый</span>
       </label>
 
       <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="Серый" checked>
-        <div class="field-checkbox__name">Серый</div>
+        <input class="field-checkbox__input" type="checkbox" value="" checked>
+        <span class="field-checkbox__name">Серый</span>
       </label>
 
       <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="Тиффани">
-        <div class="field-checkbox__name">Тиффани</div>
+        <input class="field-checkbox__input" type="checkbox" value="">
+        <span class="field-checkbox__name">Тиффани</span>
       </label>
 
       <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="Черный">
-        <div class="field-checkbox__name">Черный</div>
+        <input class="field-checkbox__input" type="checkbox" value="">
+        <span class="field-checkbox__name">Черный</span>
       </label>
 
       <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="Розовый">
-        <div class="field-checkbox__name">Розовый</div>
+        <input class="field-checkbox__input" type="checkbox" value="">
+        <span class="field-checkbox__name">Розовый</span>
       </label>
 
       <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="Оранжевый">
-        <div class="field-checkbox__name">Оранжевый</div>
+        <input class="field-checkbox__input" type="checkbox" value="">
+        <span class="field-checkbox__name">Оранжевый</span>
       </label>
     </div>
 
-    <div class="form__full-name">
+    <div class="form__order-settings">
       <div class="form__parameter">ФИО</div>
 
       <label class="field-text">
@@ -116,7 +116,7 @@
 
       <label class="field-text">
         <div class="field-text__input-wrap">
-          <input class="field-text__input" type="tel" name="tel" placeholder="+7 XXX XX XX">
+          <input class="field-text__input  field-text__input--pucture-tel" type="tel" name="tel" placeholder="+7 XXX XX XX">
         </div>
       </label>
     </div>
@@ -126,7 +126,7 @@
 
       <label class="field-text">
         <div class="field-text__input-wrap">
-          <input class="field-text__input" type="email" name="email" placeholder="Ваш Email">
+          <input class="field-text__input  field-text__input--pucture-email" type="email" name="email" placeholder="Ваш Email">
         </div>
       </label>
     </div>
@@ -144,7 +144,7 @@
     <div class="form__warning">Все поля обязательны для заполнения</div>
 
     <div class="form__submit-order">
-      <input class="form__submit-order  form__submit-order--btn  btn" type="submit" value="Отправить заказ">
+      <input class="form__submit-order  btn" type="submit" value="Отправить заказ">
     </div>
   </form>
 </main>
@@ -152,31 +152,19 @@
 <footer class="page-footer">
   <div class="page-footer__social">
     <div class="social-links">
-      <a class="social-link social-link--instagram  text-hide" href="https://www.instagram.com/htmlacademy">Instagram</a>
-      <a class="social-link social-link--facebook  text-hide" href="https://www.facebook.com/htmlacademy">Facebook</a>
-      <a class="social-link social-link--twitter  text-hide" href="https://www.twitter.com/htmlacademy">Twitter</a>
+      <a class="social-link  social-link--instagram  social-link--text-hide"
+         href="https://www.instagram.com/htmlacademy">Instagram</a>
+      <a class="social-link  social-link--facebook  social-link--text-hide" href="https://www.facebook.com/htmlacademy">Facebook</a>
+      <a class="social-link  social-link--twitter  social-link--text-hide" href="https://www.twitter.com/htmlacademy">Twitter</a>
     </div>
   </div>
 
   <div class="page-footer__copyright">
     <span class="page-footer__copyright-title">Разработано</span>
-    <a class="page-footer__copyright-link  text-hide" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </div>
 </footer>
 
-<form class="add-basket" action="" method="post">
-  <h1 class="add-basket__title">Добавить<br> в корзину</h1>
-
-  <p class="add-basket__text">Выберите размер:</p>
-
-  <div class="add-basket__items">
-    <input class="add-basket__item" type="radio" name="size" value="S" checked>
-    <input class="add-basket__item" type="radio" name="size" value="M">
-    <input class="add-basket__item" type="radio" name="size" value="L">
-  </div>
-
-  <input type="submit" value="Добавить" class="btn  add-basket__btn">
-</form>
-
 </body>
 </html>
+
