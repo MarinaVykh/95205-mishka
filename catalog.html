@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="page-header">
+  <a class="page-header__logo" href="">
+    <img src="./img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+  </a>
+
+  <nav class="main-nav  main-nav--closed  main-nav--nojs">
+
+    <span class="main-nav__toggle"></span>
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="">Каталог товаров</a></li>
+      <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+      <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
+      <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: пока пуста</a></li>
+    </ul>
+
+    <div class="main-nav  main-nav--item-active">
+      <h1 class="main-nav__item-name">Каталог товаров</h1>
+    </div>
+  </nav>
+</header>
+
+
+<main class="catalog">
+  <div class="catalog-item">
+    <a class="catalog-item__back-picture" href="">
+      <img src="./img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик" class="catalog-item__picture">
+    </a>
+
+    <div class="catalog-item__value">
+      <h2 class="catalog-item__value-title">Зайчик-попрыгайчик</h2>
+      <div class="catalog-item__value-parameters">Рост 30 см, вес 200 г</div>
+      <div class="catalog-item__value-price">1200 руб.</div>
+    </div>
+  </div>
+
+  <div class="catalog-item">
+    <a class="catalog-item__back-picture" href="">
+      <img src="./img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья" class="catalog-item__picture">
+    </a>
+
+    <div class="catalog-item__value">
+      <h2 class="catalog-item__value-title">Корзинка для белья</h2>
+      <div class="catalog-item__value-parameters">Диаметр 15 см, высота 10 см</div>
+      <div class="catalog-item__value-price">690 руб.</div>
+    </div>
+  </div>
+
+  <div class="catalog-item">
+    <a class="catalog-item__back-picture" href="">
+      <img src="./img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек" class="catalog-item__picture">
+    </a>
+
+    <div class="catalog-item__value">
+      <h2 class="catalog-item__value-title">Большая корзинка для игрушек</h2>
+      <div class="catalog-item__value-parameters">Диаметр 30 см, высота 30 см</div>
+      <div class="catalog-item__value-price">1500 руб.</div>
+    </div>
+  </div>
+
+  <div class="production-process">
+    <h2 class="production-process__title">Процесс производства</h2>
+
+    <video class="production-process__video" src="" poster="./img/video-mobile@1x.jpg" width="260" height="150">
+      <source src="" type="video/mp4">
+      <source src="" type="video/ogg">
+      <source src="" type="video/webm">
+    </video>
+
+    <p class="production-process__text">По просьбе наших любимых фолловеров
+      мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <a href="" class="production-process__order">Сделать заказ</a>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__social">
+    <div class="social-links">
+      <a class="social-link  social-link--instagram  social-link--text-hide" href="https://www.instagram.com/htmlacademy">Instagram</a>
+      <a class="social-link  social-link--facebook  social-link--text-hide" href="https://www.facebook.com/htmlacademy">Facebook</a>
+      <a class="social-link  social-link--twitter  social-link--text-hide" href="https://www.twitter.com/htmlacademy">Twitter</a>
+    </div>
+  </div>
+
+  <div class="page-footer__copyright">
+    <span class="page-footer__copyright-title">Разработано</span>
+    <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
+
+<form class="add-basket" action="" method="post">
+  <h1 class="add-basket__title">Добавить<br> в корзину</h1>
+
+  <span class="add-basket__text">Выберите размер:</span>
+
+  <div class="add-basket__items">
+    <input class="add-basket__item" type="radio" name="size" id="s" value="S" checked>
+    <label class="add-basket__item-s" for="s">S</label>
+
+    <input class="add-basket__item" type="radio" name="size" id="m" value="M">
+    <label class="add-basket__item-m" for="m">M</label>
+
+    <input class="add-basket__item" type="radio" name="size" id="l" value="L">
+    <label class="add-basket__item-l" for="l">L</label>
+  </div>
+
+  <input type="submit" value="Добавить" class="btn  add-basket__btn">
+</form>
+
+</body>
+</html>
