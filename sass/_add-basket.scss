@@ -1,0 +1,165 @@
+.add-basket {
+  width: 320px;
+  height: 340px;
+  background-color: $color--white;
+  border-top: 1px solid $color--devider;
+
+}
+
+.add-basket__title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: $size--font-large;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-black;
+  text-transform: uppercase;
+
+}
+
+.add-basket__text {
+  display: block;
+  margin-bottom: 30px;
+  font-size: $size--font-small;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-gray;
+
+}
+
+.add-basket__items {
+  margin: 0 30px 30px 30px;
+
+}
+
+.add-basket__item {
+  display: none;
+
+}
+
+.add-basket__item-s {
+  position: relative;
+  line-height: 50px;
+
+}
+
+.add-basket__item-s:before {
+  content: "S";
+  display: inline-block;
+  //margin-right: 1px;
+  width: 78px;
+  height: 50px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-gray;
+  border: 2px solid $color--devider;
+
+}
+
+.add-basket__item-s:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 78px;
+  height: 50px;
+  border: 2px solid $color--dark-turquoise;
+  transform: scale(0);
+
+}
+
+.add-basket__item:checked + .add-basket__item-s:after {
+  transform: scale(1);
+
+}
+
+.add-basket__item-m {
+  position: relative;
+  line-height: 50px;
+
+}
+
+.add-basket__item-m:before {
+  content: "M";
+  display: inline-block;
+  //margin-right: 1px;
+  width: 78px;
+  height: 50px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-gray;
+  border: 2px solid $color--devider;
+
+}
+
+.add-basket__item-m:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 78px;
+  height: 50px;
+  border: 2px solid $color--dark-turquoise;
+  transform: scale(0);
+
+}
+
+.add-basket__item:checked + .add-basket__item-m:after {
+  transform: scale(1);
+
+}
+
+.add-basket__item-l {
+  position: relative;
+  line-height: 50px;
+
+}
+
+.add-basket__item-l:before {
+  content: "L";
+  display: inline-block;
+  width: 78px;
+  height: 50px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-gray;
+  border: 2px solid $color--devider;
+
+}
+
+.add-basket__item-l:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 78px;
+  height: 50px;
+  border: 2px solid $color--dark-turquoise;
+  transform: scale(0);
+
+}
+
+.add-basket__item:checked + .add-basket__item-l:after {
+  transform: scale(1);
+
+}
+
+.add-basket__btn {
+  margin-left: 30px;
+  background-color: $color--turquoise;
+  color: $color--font-white;
+  border: none;
+
+}
+
+.add-basket__item-name {
+  display: none;
+
+}

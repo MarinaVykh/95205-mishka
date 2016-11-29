@@ -1,0 +1,78 @@
+.product-of-week {
+  padding: 30px;
+
+}
+
+.product-of-week__title {
+  margin-bottom: 10px;
+  font-size: $size--font-large;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-black;
+
+}
+
+.product-of-week__lable {
+  display: block;
+  padding-bottom: 30px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-turquoise;
+  text-transform: uppercase;
+
+}
+
+.product-of-week__info {
+  margin-bottom: 20px;
+  font-size: $size--font-small;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-gray;
+
+}
+
+.product-of-week__parameters {
+  width: 260px;
+  margin-bottom: 30px;
+  font-size: $size--font-small;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-gray;
+  border-collapse: collapse;
+
+}
+
+.product-of-week__parameter {
+  border-bottom: 1px solid $color--devider;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.product-of-week__parameter-name {
+  border-bottom: 1px solid $color--devider;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+}
+
+.product-of-week__picture {
+  display: block;
+  margin-bottom: 25px;
+
+}
+
+.product-of-week__price {
+  margin-bottom: 25px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-gray;
+
+}
+
+.product-of-week__order {
+  margin-bottom: 35px;
+
+}

@@ -1,0 +1,24 @@
+.form {
+  width: 320px;
+  padding: 30px;
+
+}
+
+.form__text {
+  font-size: $size--font-xx-small;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-gray;
+
+}
+
+.form__submit-order {
+  background-color: $color--white;
+
+}
+
+.form__warning {
+  font-size: $size--font-x-small;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-gray;
+
+}

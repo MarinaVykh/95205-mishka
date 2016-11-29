@@ -1,0 +1,85 @@
+.main-nav {
+  position: relative;
+
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -52px;
+  right: 30px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-image: url('../img/icon-menu-open.svg');
+  background-repeat: no-repeat;
+
+}
+
+.main-nav__item {
+  height: 80px;
+  padding-top: 25px;
+  padding-left: 80px;
+  border-bottom: 1px solid $color--devider;
+
+}
+
+.main-nav__item a {
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-black;
+
+}
+
+.main-nav__item--search {
+  padding-left: 64px;
+
+}
+
+.main-nav__item--search:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/icon-search.svg');
+  background-repeat: no-repeat;
+  right: 25px;
+  top: 3px;
+
+}
+
+.main-nav__item--basket {
+  padding-left: 60px;
+
+}
+
+.main-nav__item--basket:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 19px;
+  background-image: url('../img/icon-cart.svg');
+  background-repeat: no-repeat;
+  right: 25px;
+  top: 4px;
+
+}
+
+.main-nav--item-active {
+  height: 180px;
+  padding-top: 70px;
+  padding-left: 40px;
+  background-color: $color--gray;
+
+}
+
+.main-nav__item-name {
+  font-size: $size--font-x-large;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-dark;
+
+}
+
