@@ -92,14 +92,14 @@
       <label class="field-text">
         <div class="field-text__name">Имя:</div>
         <div class="field-text__input-wrap">
-          <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя">
+          <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" required>
         </div>
       </label>
 
       <label class="field-text">
         <div class="field-text__name">Фамилия:</div>
         <div class="field-text__input-wrap">
-          <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию">
+          <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
         </div>
       </label>
 
@@ -116,7 +116,7 @@
 
       <label class="field-text">
         <div class="field-text__input-wrap">
-          <input class="field-text__input  field-text__input--pucture-tel" type="tel" name="tel" placeholder="+7 XXX XX XX">
+          <input class="field-text__input  field-text__input--pucture-tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
         </div>
       </label>
     </div>
@@ -126,7 +126,7 @@
 
       <label class="field-text">
         <div class="field-text__input-wrap">
-          <input class="field-text__input  field-text__input--pucture-email" type="email" name="email" placeholder="Ваш Email">
+          <input class="field-text__input  field-text__input--pucture-email" type="email" name="email" placeholder="Ваш Email*" required>
         </div>
       </label>
     </div>
@@ -141,7 +141,7 @@
       </label>
     </div>
 
-    <div class="form__warning">Все поля обязательны для заполнения</div>
+    <span class="form__warning">*Поля обязательны для заполнения</span>
 
     <div class="form__submit-order">
       <input class="form__submit-order  btn" type="submit" value="Отправить заказ">
