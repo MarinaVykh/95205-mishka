@@ -1,0 +1,62 @@
+.field-checkbox {
+  display: block;
+  margin-bottom: 35px;
+
+}
+
+.field-checkbox__input {
+  display: none;
+
+}
+
+.field-checkbox__input:checked ~ .field-checkbox__name::after {
+  transform: rotate(-45deg);
+
+}
+
+.field-checkbox__input:checked ~ .field-checkbox__name::before {
+  border-color: $color--dark-gray;
+
+}
+
+.field-checkbox__name {
+  display: block;
+  position: relative;
+  width: 200px;
+  left: 60px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-black;
+
+}
+
+.field-checkbox__name::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -62px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  border: solid 2px $color--font-gray;
+
+}
+
+.field-checkbox__name:hover::before {
+  border-color: $color--light-turquoise;
+
+}
+
+.field-checkbox__name::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -52px;
+  width: 18px;
+  height: 8px;
+  border-left: 2px solid $color--font-black;
+  border-bottom: 2px solid $color--font-black;
+  transform: scale(0);
+
+}

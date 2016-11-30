@@ -1,0 +1,22 @@
+.field-textarea__input-wrap {
+  margin-bottom: 10px;
+
+}
+
+.field-textarea__input {
+  width: 260px;
+  height: 140px;
+  padding-top: 18px;
+  padding-left: 15px;
+  font-size: $size--font-medium;
+  font-family: 'Open Sans', sans-serif;
+  color: $color--font-gray;
+  border: 2px solid $color--font-black;
+
+}
+
+.field-textarea__input:hover, .field-textarea__input:focus {
+  outline: none;
+  border: 2px solid $color--light-turquoise;
+
+}
