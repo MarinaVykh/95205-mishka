@@ -11,7 +11,6 @@
   margin-bottom: 20px;
   font-size: $size--font-large;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: $color--font-black;
   text-transform: uppercase;
@@ -22,7 +21,6 @@
   display: block;
   margin-bottom: 30px;
   font-size: $size--font-small;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: $color--font-gray;
 
@@ -37,10 +35,10 @@
   display: inline-block;
   margin-right: 6px;
 
-}
+  &:last-child {
+    margin-right: 0;
 
-.add-basket__item-name:last-child {
-  margin-right: 0;
+  }
 
 }
 
@@ -57,30 +55,29 @@
   line-height: 50px;
   font-size: $size--font-medium;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: $color--font-gray;
 
-}
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 78px;
+    height: 50px;
+    border: 2px solid $color--devider;
 
-.add-basket__item-name-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 78px;
-  height: 50px;
-  border: 2px solid $color--devider;
+  }
 
-}
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 78px;
+    height: 50px;
+    border: 2px solid $color--dark-turquoise;
+    transform: scale(0);
 
-.add-basket__item-name-text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 78px;
-  height: 50px;
-  border: 2px solid $color--dark-turquoise;
-  transform: scale(0);
+  }
 
 }
 

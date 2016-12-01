@@ -10,7 +10,7 @@
   display: block;
   width: 20px;
   height: 14px;
-  background-image: url('../img/icon-menu-open.svg');
+  background-image: url('../../img/icon-menu-open.svg');
   background-repeat: no-repeat;
 
 }
@@ -26,7 +26,6 @@
 .main-nav__item a {
   font-size: $size--font-medium;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-black;
 
 }
@@ -34,36 +33,34 @@
 .main-nav__item--search {
   padding-left: 64px;
 
-}
-
-.main-nav__item--search:before {
-  content: '';
-  display: inline-block;
-  position: relative;
-  width: 17px;
-  height: 17px;
-  background-image: url('../img/icon-search.svg');
-  background-repeat: no-repeat;
-  right: 25px;
-  top: 3px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    background-image: url('../../img/icon-search.svg');
+    background-repeat: no-repeat;
+    right: 25px;
+    top: 3px;
+  }
 
 }
 
 .main-nav__item--basket {
   padding-left: 60px;
 
-}
-
-.main-nav__item--basket:before {
-  content: '';
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  height: 19px;
-  background-image: url('../img/icon-cart.svg');
-  background-repeat: no-repeat;
-  right: 25px;
-  top: 4px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 19px;
+    background-image: url('../img/icon-cart.svg');
+    background-repeat: no-repeat;
+    right: 25px;
+    top: 4px;
+  }
 
 }
 
@@ -78,7 +75,6 @@
 .main-nav__item-name {
   font-size: $size--font-x-large;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-dark;
 
 }

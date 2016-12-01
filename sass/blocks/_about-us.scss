@@ -1,0 +1,76 @@
+.about-us {
+  margin: 0 30px 30px 30px;
+
+}
+
+.about-us__title {
+  margin-bottom: 40px;
+  font-size: $size--font-large;
+  font-weight: bold;
+  color: $color--font-black;
+
+}
+
+.about-us__item {
+  display: block;
+  margin-bottom: 40px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  color: $color--font-black;
+
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+
+  }
+  &--flower::before {
+    width: 33px;
+    height: 38px;
+    background-image: url('../../img/icon-feature-1.svg');
+    background-repeat: no-repeat;
+    bottom: 20px;
+
+  }
+  &--style::before {
+    width: 47px;
+    height: 28px;
+    background-image: url('../../img/icon-feature-3.svg');
+    background-repeat: no-repeat;
+    bottom: 20px;
+
+  }
+  &--heart::before {
+    width: 33px;
+    height: 28px;
+    background-image: url('../../img/icon-feature-5.svg');
+    background-repeat: no-repeat;
+    bottom: 20px;
+
+  }
+  &--clew::before {
+    width: 35px;
+    height: 35px;
+    background-image: url('../../img/icon-feature-2.svg');
+    background-repeat: no-repeat;
+    bottom: 20px;
+
+  }
+  &--rocket::before {
+    width: 54px;
+    height: 23px;
+    background-image: url('../../img/icon-feature-4.svg');
+    background-repeat: no-repeat;
+    bottom: 20px;
+
+  }
+  &--present::before {
+    width: 33px;
+    height: 33px;
+    background-image: url('../../img/icon-feature-6.svg');
+    background-repeat: no-repeat;
+    bottom: 20px;
+  }
+
+
+}

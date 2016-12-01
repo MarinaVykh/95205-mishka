@@ -11,9 +11,8 @@
   padding: 30px 30px 30px 55px;
   font-size: $size--font-medium;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-black;
-  background-image: url('../img/icon-video.svg');
+  background-image: url('../../img/icon-video.svg');
   background-repeat: no-repeat;
   background-position: center left;
 
@@ -23,7 +22,6 @@
 .production-process__text {
   padding: 30px;
   font-size: $size--font-xx-small;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-gray;
 
 }
@@ -34,7 +32,6 @@
   padding: 12px 0;
   font-size: $size--font-medium;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: $color--font-gray;
   text-transform: uppercase;

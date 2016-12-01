@@ -7,7 +7,6 @@
   margin-bottom: 30px;
   font-size: $size--font-large;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-black;
 
 }
@@ -22,7 +21,6 @@
 .reviews__item {
   font-size: $size--font-small;
   line-height: 30px;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-gray;
 
 }
@@ -32,7 +30,6 @@
   margin-top: 25px;
   font-size: $size--font-x-medium;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-black;
   font-style: normal;
 
@@ -41,39 +38,39 @@
 .reviews__auhor-mail {
   display: block;
   font-size: $size--font-x-medium;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-gray;
 }
 
 .reviews__switch {
   width: 260px;
   margin-bottom: 40px;
+  @include clearfix;
 
-}
+  &--left {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 50px;
+    background-image: url('../../img/icon-left-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ececec;
+    border-right: none;
 
-.reviews__switch--left {
-  display: block;
-  float: left;
-  width: 130px;
-  height: 50px;
-  background-image: url('../img/icon-left-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid #ececec;
-  border-right: none;
+  }
 
-}
+  &--right {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 50px;
+    background-image: url('../../img/icon-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ececec;
+    clear: right;
 
-.reviews__switch--right {
-  display: block;
-  float: left;
-  width: 130px;
-  height: 50px;
-  background-image: url('../img/icon-right-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid #ececec;
-  clear: right;
+  }
 
 }
 

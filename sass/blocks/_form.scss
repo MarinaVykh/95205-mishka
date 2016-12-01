@@ -7,7 +7,6 @@
 .form__text {
   margin-bottom: 30px;
   font-size: $size--font-xx-small;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-gray;
 
 }
@@ -22,19 +21,18 @@
   margin-bottom: 25px;
   font-size: $size--font-medium;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: $color--light-turquoise;
   text-transform: uppercase;
 
-}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    border-bottom: 1px solid $color--light-turquoise;
 
-.form__parameter::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 200px;
-  border-bottom: 1px solid $color--light-turquoise;
+  }
 
 }
 
@@ -42,7 +40,6 @@
   display: block;
   margin-bottom: 30px;
   font-size: $size--font-x-small;
-  font-family: 'Open Sans', sans-serif;
   color: $color--font-gray;
 
 }
