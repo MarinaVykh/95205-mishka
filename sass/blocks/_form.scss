@@ -1,0 +1,51 @@
+.form {
+  width: 320px;
+  padding: 30px;
+
+}
+
+.form__text {
+  margin-bottom: 30px;
+  font-size: $size--font-xx-small;
+  color: $color--font-gray;
+
+}
+
+.form__order-settings {
+  margin-bottom: 35px;
+
+}
+
+.form__parameter {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  color: $color--light-turquoise;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    border-bottom: 1px solid $color--light-turquoise;
+
+  }
+
+}
+
+.form__warning {
+  display: block;
+  margin-bottom: 30px;
+  font-size: $size--font-x-small;
+  color: $color--font-gray;
+
+}
+
+.form__submit-order {
+  margin-bottom: 15px;
+  background-color: $color--white;
+
+}

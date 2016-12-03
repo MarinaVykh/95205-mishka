@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  width: 260px;
+  height: 52px;
+  padding: 12px 0;
+  font-size: $size--font-medium;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: $color--font-gray;
+  text-transform: uppercase;
+  border: 2px solid $color--font-gray;
+
+}
