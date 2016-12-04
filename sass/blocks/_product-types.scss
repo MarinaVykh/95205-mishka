@@ -63,25 +63,25 @@
 
 }
 
-//@media ($desktop-width) {
-//  .product-types {
-//    width: 1150px;
-//
-//  }
-//
-//  .product-types__item {
-//    width: 525px;
-//
-//    &--home-furnishings {
-//      background-position: 92%;
-//
-//    }
-//
-//    &--kids-toys {
-//      background-position: 92%;
-//
-//    }
-//
-//  }
-//
-//}
+@media ($desktop-width) {
+  .product-types {
+    width: 1150px;
+
+  }
+
+  .product-types__item {
+    width: 525px;
+
+    &--home-furnishings {
+      background-position: 92%;
+
+    }
+
+    &--kids-toys {
+      background-position: 92%;
+
+    }
+
+  }
+
+}

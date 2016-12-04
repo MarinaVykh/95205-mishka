@@ -165,45 +165,47 @@
   }
 }
 
-//@media ($desktop-width) {
-//  .about-us {
-//    width: 1150px;
-//  }
-//
-//  .about-us__title {
-//    font-size: $size--font-xxx-large;
-//    line-height: 57px;
-//
-//  }
-//
-//  .about-us__item {
-//    width: 35%;
-//
-//    &--flower {
-//      order: 1;
-//      padding-right: 140px;
-//
-//    }
-//    &--style {
-//      order: 3;
-//      padding-right: 110px;
-//
-//    }
-//    &--heart {
-//      order: 5;
-//      padding-right: 130px;
-//
-//    }
-//
-//    &--present {
-//      order: 6;
-//      padding-right: 80px;
-//
-//    }
-//
-//  }
-//
-//}
+@media ($desktop-width) {
+  .about-us {
+    width: 1150px;
+    padding-left: 170px;
+
+  }
+
+  .about-us__title {
+    font-size: $size--font-xxx-large;
+    line-height: 57px;
+
+  }
+
+  .about-us__item {
+    width: 35%;
+
+    &--flower {
+      order: 1;
+      padding-right: 140px;
+
+    }
+    &--style {
+      order: 3;
+      padding-right: 110px;
+
+    }
+    &--heart {
+      order: 5;
+      padding-right: 130px;
+
+    }
+
+    &--present {
+      order: 6;
+      padding-right: 80px;
+
+    }
+
+  }
+
+}
 
 
 

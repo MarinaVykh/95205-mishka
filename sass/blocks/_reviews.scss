@@ -175,6 +175,7 @@
 @media ($desktop-width) {
   .reviews {
     width: 1150px;
+    padding-left: 170px;
 
     &::after {
       background-size: 1150px 23px;
