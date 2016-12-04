@@ -167,11 +167,18 @@
       </tr>
     </table>
 
-    <div class="contacts__map">
-      <iframe
-        src="./img/map-mobile@1x.jpg" width="320" height="457" frameborder="" style="border:0" allowfullscreen>
-      </iframe>
-    </div>
+    <!--<div class="contacts__map">-->
+      <!--<iframe-->
+        <!--src="./img/map-mobile@1x.jpg" width="320" height="457" frameborder="" style="border:0" allowfullscreen>-->
+      <!--</iframe>-->
+    <!--</div>-->
+
+
+    <picture class="contacts__map">
+      <!--<source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">-->
+      <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+      <img src="img/map-mobile@1x.jpg" alt="Карта">
+    </picture>
 
     <a href="" class="contacts__write-us  btn">Напишите нам</a>
   </section>
