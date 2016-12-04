@@ -75,20 +75,35 @@
 
 @media ($tablet-width) {
   .product-of-week {
+    position: relative;
     width: 768px;
     padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url('../../img/bg-zigzag-line.svg');
+      background-repeat: no-repeat;
+      background-size: 768px 16px;
+      width: 768px;
+      height: 23px;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+
+    }
 
   }
 
   .product-of-week__header {
     display: flex;
     flex-direction: row;
-    width: 768px;
     margin: 30px 50px;
 
   }
 
   .product-of-week__title {
+    display: inline-block;
     min-width: 500px;
     margin: 0;
     padding: 0;
@@ -99,8 +114,9 @@
   }
 
   .product-of-week__lable {
+    display: inline-block;
     width: 100px;
-    margin: 14px 0 0 80px;
+    margin: 14px 20px 0 45px;
     padding: 0;
     text-align: center;
     vertical-align: middle;
@@ -112,13 +128,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 768px;
     margin: 0 50px;
 
   }
 
   .product-of-week__main-wrapper {
-    width: 384px;
+    width: 50%;
 
   }
 
@@ -148,7 +163,7 @@
   }
 
   .product-of-week__order-wrapper {
-    width: 384px;
+    width: 50%;
     margin-top: -74px;
 
   }
@@ -164,3 +179,75 @@
   }
 
 }
+
+//@media ($desktop-width) {
+//  .product-of-week {
+//    position: relative;
+//    width: 1150px;
+//    padding: 0;
+//
+//    &::after {
+//      content: "";
+//      position: absolute;
+//      background: url('../../img/bg-zigzag-line.svg');
+//      background-repeat: no-repeat;
+//      background-size: 1150px 23px;
+//      width: 1150px;
+//      height: 23px;
+//      left: 0;
+//      right: 0;
+//      bottom: -60px;
+//
+//    }
+//
+//  }
+//
+//  .product-of-week__header {
+//    position: absolute;
+//    margin-top: 110px;
+//
+//  }
+//
+//  .product-of-week__title {
+//    order: 2;
+//    font-size: $size--font-xxx-large;
+//    line-height: 57px;
+//
+//  }
+//
+//  .product-of-week__lable {
+//    order: 1;
+//
+//  }
+//
+//  .product-of-week__main-wrapper {
+//    width: 32%;
+//    margin-top: 200px;
+//    margin-left: 170px;
+//
+//  }
+//
+//  .product-of-week__info {
+//    margin-bottom: 40px;
+//
+//  }
+//
+//  .product-of-week__photo-wrapper {
+//    width: 525px;
+//    height: 636px;
+//
+//  }
+//
+//  .product-of-week__picture {
+//    margin-top: 60px;
+//
+//  }
+//
+//  .product-of-week__order-wrapper {
+//    width: 32%;
+//    margin-top: -42px;
+//    margin-left: 170px;
+//
+//  }
+//
+//}
