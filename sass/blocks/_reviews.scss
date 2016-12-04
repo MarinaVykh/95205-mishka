@@ -46,6 +46,7 @@
   width: 260px;
   margin-bottom: 40px;
   @include clearfix;
+  font-size: 0;
 
   &--left {
     display: block;
