@@ -204,7 +204,7 @@
 
   .product-of-week__header {
     position: absolute;
-    margin-top: 110px;
+    margin: 110px 0 0 0;
 
   }
 
@@ -217,6 +217,11 @@
 
   .product-of-week__lable {
     order: 1;
+
+  }
+
+  .product-of-week__main {
+    margin: 0;
 
   }
 
@@ -240,6 +245,7 @@
 
   .product-of-week__picture {
     margin-top: 60px;
+    margin-left: 36px;
 
   }
 

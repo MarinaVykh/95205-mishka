@@ -141,20 +141,24 @@
   }
 
   .reviews__switch {
-    position: absolute;
-    bottom: 30px;
-    right: 0;
+    bottom: 60px;
+    right: 25px;
     width: 50px;
     margin: 0;
     font-size: 0;
 
     &--left {
+      position: absolute;
+      width: 135px;
+      background-position: left;
       border: none;
-      right: 85px;
 
     }
 
     &--right {
+      position: absolute;
+      width: 135px;
+      background-position: right;
       border: none;
 
     }
@@ -166,7 +170,7 @@
     width: 175px;
     margin: 0;
     top: 65px;
-    right: 0;
+    right: 25px;
 
   }
 
@@ -203,17 +207,27 @@
   }
 
   .reviews__switch {
-    bottom: 45px;
+    bottom: 80px;
+    right: 50px;
+
+    &--left {
+      width: 135px;
+      background-position: left;
+
+    }
+
+    &--right {
+      width: 135px;
+      background-position: right;
+
+    }
 
   }
 
   .reviews__write {
     top: 70px;
+    right: 50px;
 
   }
 
 }
-
-
-
-
