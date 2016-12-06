@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   width: 320px;
-  min-height: 318px;
   margin: 0 auto;
 
 }
@@ -37,20 +36,31 @@
 
 }
 
-.main-nav__item a, .main-nav__user-item a, .main-nav__desktop-item a {
+.main-nav__item, .main-nav__user-item, .main-nav__desktop-item {
   display: block;
   height: 80px;
   padding-top: 25px;
   padding-left: 80px;
-  font-size: $size--font-medium;
-  line-height: 24px;
-  font-weight: bold;
-  color: $color--font-black;
   border-bottom: 1px solid $color--devider;
 
 }
 
-.main-nav__user-item--search a {
+.main-nav__item a, .main-nav__user-item a, .main-nav__desktop-item a {
+  font-size: $size--font-medium;
+  line-height: 24px;
+  font-weight: bold;
+  color: $color--font-black;
+
+}
+
+.main-nav__item-name-active {
+  font-size: $size--font-x-large;
+  font-weight: bold;
+  color: $color--font-dark;
+
+}
+
+.main-nav__user-item--search {
   padding-left: 65px;
 
   &::before {
@@ -62,13 +72,13 @@
     background-image: url('../../img/icon-search.svg');
     background-repeat: no-repeat;
     top: 2px;
-    left: -50px;
+    left: -40px;
 
   }
 
 }
 
-.main-nav__user-item--basket a {
+.main-nav__user-item--basket {
   padding-left: 62px;
 
   &::before {
@@ -80,7 +90,7 @@
     background-image: url('../../img/icon-cart.svg');
     background-repeat: no-repeat;
     top: 2px;
-    left: -50px;
+    left: -40px;
 
   }
 
@@ -92,7 +102,6 @@
 
   }
 
-
   .main-nav--closed .main-nav__item {
     display: none;
 
@@ -100,6 +109,10 @@
       display: block;
 
     }
+
+  }
+
+  .main-nav--closed .main-nav__wrapper {
 
   }
 
@@ -122,7 +135,8 @@
     right: 0;
     left: 0;
     z-index: 10;
-    height: 318px;
+    height: 319px;
+    background-color: $color--white;
 
   }
 
@@ -147,27 +161,59 @@
 
   }
 
-
-
-
-
-
 }
 
+@media ($tablet-width) {
+  .main-nav, .main-nav--closed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 768px;
+    min-height: 90px;
+
+  }
+
+  main-nav__toggle {
+    display: none;
+
+  }
+
+  .main-nav__desktop-list {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .main-nav__list {
+    order: 2;
+    display: flex;
+    //position: absolute;
+    flex-direction: row;
+    padding: 0;
+    border: none;
+
+  }
 
 
+  .main-nav__user-list {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    padding: 0;
 
+  }
 
+  .main-nav__item, .main-nav__user-item {
+    min-height: 90px;
+    border: none;
+    padding: 0;
 
-
-
-
-
-
-
-.main-nav__item-name-active {
-  font-size: $size--font-x-large;
-  font-weight: bold;
-  color: $color--font-dark;
+  }
 
 }
