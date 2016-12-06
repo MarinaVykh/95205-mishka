@@ -55,45 +55,46 @@
     }
 
   }
-
-  .page-main__slogan-text {
-    width: 500px;
-    margin-bottom: 360px;
-    font-size: $size--font-xx-large;
-    line-height:  50px;
-    font-weight: bold;
-    text-align: center;
-    color: $color--font-black;
-
-  }
-
 }
-
-@media ($desktop-width) {
-  .page-main {
-    width: 1150px;
-    margin: 0 auto;
-
-  }
-
-  .page-main__slogan {
-    width: 1150px;
-    min-height: 745px;
-
-    &::after {
-      width: 1150px;
-      background-size: 1150px 34px;
-
-    }
-
-  }
-
-  .page-main__slogan-text {
-    width: 650px;
-    margin-bottom: 355px;
-    font-size: $size--font-xxx-large;
-    line-height:  57px;
-
-  }
-
-}
+//
+//  .page-main__slogan-text {
+//    width: 500px;
+//    margin-bottom: 360px;
+//    font-size: $size--font-xx-large;
+//    line-height:  50px;
+//    font-weight: bold;
+//    text-align: center;
+//    color: $color--font-black;
+//
+//  }
+//
+//}
+//
+//@media ($desktop-width) {
+//  .page-main {
+//    width: 1150px;
+//    margin: 0 auto;
+//
+//  }
+//
+//  .page-main__slogan {
+//    width: 1150px;
+//    min-height: 745px;
+//
+//    &::after {
+//      width: 1150px;
+//      background-size: 1150px 34px;
+//
+//    }
+//
+//  }
+//
+//  .page-main__slogan-text {
+//    width: 650px;
+//    margin-bottom: 355px;
+//    font-size: $size--font-xxx-large;
+//    line-height:  57px;
+//
+//  }
+//
+//}

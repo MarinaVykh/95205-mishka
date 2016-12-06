@@ -16,9 +16,12 @@
 
 }
 
-@media ($desktop-width) {
+@media ($tablet-width) {
   .page-header {
+    position: relative;
+    z-index: 1;
     display: flex;
+    flex-direction: row;
     width: 768px;
 
   }
@@ -26,7 +29,7 @@
   .page-header__logo {
     width: 370px;
     padding: 0;
-    border: none;
+    border-bottom: 1px solid $color--devider;
 
   }
 
