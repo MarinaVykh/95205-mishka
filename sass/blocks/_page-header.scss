@@ -28,8 +28,39 @@
 
   .page-header__logo {
     width: 370px;
-    padding: 0;
+    padding: 22px 0 0 50px;
     border-bottom: 1px solid $color--devider;
+
+  }
+
+  .page-header__delivery-info  {
+    position: absolute;
+    display: block;
+    top: 110px;
+    right: 50px;
+    font-size: $size--font-small;
+    line-height: 24px;
+    color: $color--font-gray;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .page-header {
+    width: 1150px;
+
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 1;
+    width: 149px;
+    height: 73px;
+    padding: 0;
+    top: 10px;
+    left: 500px;
+    border: none;
 
   }
 
