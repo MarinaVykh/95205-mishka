@@ -1,5 +1,6 @@
 .contacts {
   width: 320px;
+  margin: 0 auto;
 
 }
 
@@ -12,7 +13,8 @@
 }
 
 .contacts__items {
-  padding: 0 30px 0 30px;
+  margin: 0 30px;
+  padding: 0;
   font-size: $size--font-small;
   line-height: 30px;
   color: $color--font-gray;

@@ -238,80 +238,80 @@
 
 }
 
-//@media ($desktop-width) {
-//  .main-nav {
-//    order: 1;
-//
-//  }
-//
-//  .main-nav__desktop-list {
-//    display: block;
-//
-//  }
-//
-//  .main-nav__list {
-//    position: static;
-//    order: 1;
-//    display: flex;
-//    flex-direction: row;
-//    width: 750px;
-//    margin: 0;
-//    left: 0px;
-//    top: 0px;
-//    border-bottom: 1px solid $color--devider;
-//
-//  }
-//
-//  .main-nav__user-list {
-//    order: 3;
-//    display: flex;
-//    flex-direction: row;
-//    height: 90px;
-//    margin: 0;
-//    padding: 0;
-//
-//  }
-//
-//  .main-nav__item {
-//    padding: 0;
-//
-//    &:nth-child(1) {
-//      width: 235px;
-//      padding: 32px 0 0 50px;
-//      border-right: 1px solid $color--devider;
-//
-//    }
-//
-//    &:nth-child(2) {
-//      width: 515px;
-//      padding: 32px 0 0 33px;
-//
-//    }
-//
-//  }
-//
-//  .main-nav__item a {
-//    font-size: $size--font-medium;
-//
-//  }
-//
-//  .main-nav__desktop-list {
-//    position: absolute;
-//    display: flex;
-//    flex-direction: row;
-//    top: 110px;
-//    left: 50px;
-//
-//  }
-//
-//  .main-nav__desktop-item {
-//    padding-right: 60px;
-//
-//  }
-//
-//  .main-nav__desktop-list a {
-//    font-size: $size--font-small;
-//
-//  }
-//
-//}
+@media ($desktop-width) {
+  .main-nav {
+    order: 1;
+
+  }
+
+  .main-nav__desktop-list {
+    display: block;
+
+  }
+
+  .main-nav__list {
+    position: static;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid $color--devider;
+
+  }
+
+  .main-nav__user-list {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .main-nav__item {
+    padding: 0;
+
+    &:nth-child(1) {
+      width: 235px;
+      padding: 32px 0 0 50px;
+      border-right: 1px solid $color--devider;
+
+    }
+
+    &:nth-child(2) {
+      width: 515px;
+      padding: 32px 0 0 33px;
+
+    }
+
+  }
+
+  .main-nav__item a {
+    font-size: $size--font-medium;
+
+  }
+
+  .main-nav__desktop-list {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 110px;
+    left: 50px;
+
+  }
+
+  .main-nav__desktop-item {
+    padding-right: 60px;
+
+  }
+
+  .main-nav__desktop-list a {
+    font-size: $size--font-small;
+
+  }
+
+}

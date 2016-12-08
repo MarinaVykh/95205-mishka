@@ -18,6 +18,23 @@
 
 }
 
+.production-process__video {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 101px;
+    height: 77px;
+    top: 40px;
+    left: 78px;
+    background-image: url('../../img/icon-play.svg');
+    background-repeat: no-repeat;
+
+  }
+
+}
+
 
 .production-process__text {
   padding: 30px;
@@ -61,6 +78,12 @@
   .production-process__video {
     order: 1;
 
+    &::before {
+      top: 195px;
+      left: 285px;
+
+    }
+
   }
 
 
@@ -81,4 +104,5 @@
 
 
   }
+
 }
