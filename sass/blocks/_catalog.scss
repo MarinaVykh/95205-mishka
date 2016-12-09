@@ -39,11 +39,13 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../../img/bg-zigzag-fill.svg") no-repeat;
+      background: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
       background-size: 768px 34px;
       width: 768px;
       height: 34px;
       left: 0;
+      right: 0;
       top: 209px;
 
     }
@@ -53,6 +55,47 @@
   .catalog__title-text {
     font-size: $size--font-xx-large;
     line-height: 50px;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .catalog {
+    width: 1150px;
+
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 132px 50px 60px;
+
+  }
+
+  .catalog__title {
+    min-height: 252px;
+    margin-bottom: 85px;
+    padding-top: 55px;
+
+
+    &::after {
+      background-size: 1150px 34px;
+      width: 1150px;
+      height: 34px;
+      left: 0;
+      right: 0;
+      top: 235px;
+
+    }
+
+  }
+
+  .catalog__title-text {
+    font-size: $size--font-xxx-large;
+    line-height: 57px;
 
   }
 

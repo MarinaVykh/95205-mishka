@@ -101,3 +101,25 @@
   }
 
 }
+
+@media ($desktop-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: column;
+    width: 318px;
+    margin: 0;
+
+  }
+
+  .catalog-item__back-picture {
+    width: 100%;
+
+  }
+
+  .catalog-item__value {
+    width: 100%;
+    padding: 0;
+
+  }
+
+}
