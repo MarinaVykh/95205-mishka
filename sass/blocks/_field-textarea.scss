@@ -38,3 +38,17 @@
   }
 
 }
+
+@media ($desktop-width) {
+  .field-textarea {
+    width: 680px;
+    margin: 0;
+
+  }
+
+  .field-textarea__input {
+    width: 680px;
+
+  }
+
+}

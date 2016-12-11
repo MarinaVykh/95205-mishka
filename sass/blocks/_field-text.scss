@@ -72,10 +72,9 @@
 
   }
 
-
   .field-text__input {
     min-width: 374px;
-    padding:0 0 12px 20px;
+    padding: 0 0 12px 20px;
     font-size: $size--font--xx-medium;
     line-height: 18px;
 
@@ -95,6 +94,29 @@
   .field-text__input--picture-email {
     width: 487px;
     background-color: $color--gray;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .field-text__input {
+    min-width: 570px;
+
+  }
+
+  .field-text__input--long {
+    width: 620px;
+
+  }
+
+  .field-text__input--picture-tel {
+    width: 680px;
+
+  }
+
+  .field-text__input--picture-email {
+    width: 680px;
 
   }
 
