@@ -61,3 +61,36 @@
   }
 
 }
+
+@media ($tablet-width) {
+  .field-radio {
+    margin-bottom: 60px;
+
+  }
+
+  .field-radio__name {
+    min-width: 335px;
+    left: 70px;
+    font-size: $size--font--xx-medium;
+    line-height: 18px;
+
+
+    &::before {
+      top: -16px;
+      left: -90px;
+      width: 50px;
+      height: 50px;
+
+    }
+
+    &::after {
+      top: 1px;
+      left: -73px;
+      width: 20px;
+      height: 20px;
+
+    }
+
+  }
+
+}

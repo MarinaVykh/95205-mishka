@@ -11,28 +11,50 @@
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo" href="">
-    <img src="./img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-  </a>
+  <div class="page-header__logo">
+    <a class="page-header__logo-link" href="index.html">
+
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Mishka">
+      </picture>
+
+    </a>
+  </div>
 
   <nav class="main-nav  main-nav--closed  main-nav--nojs">
 
     <span class="main-nav__toggle"></span>
 
-    <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="">Каталог товаров</a></li>
-      <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
-      <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
-      <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: пока пуста</a></li>
-    </ul>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+      </ul>
 
-    <div class="main-nav  main-nav__item-active">
-      <h1 class="main-nav__item-name-active">Вязание на заказ</h1>
+      <ul class="main-nav__user-list">
+        <li class="main-nav__user-item  main-nav__user-item--search"><a href="">Поиск по сайту</a></li>
+        <li class="main-nav__user-item  main-nav__user-item--basket"><a href="">Корзина: пока пуста</a></li>
+      </ul>
+
+      <ul class="main-nav__desktop-list">
+        <li class="main-nav__desktop-item  main-nav__new"><a href="">Новые поступления</a></li>
+        <li class="main-nav__desktop-item  main-nav__sales"><a href="">Распродажа</a></li>
+      </ul>
+
     </div>
+
+    <span class="page-header__delivery-info">Бесплатная доставка по России</span>
+
   </nav>
 </header>
 
 <main class="form">
+  <div class="form__title">
+    <h1 class="form__title-text">Вязание на заказ</h1>
+  </div>
+
   <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
     форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
@@ -41,115 +63,139 @@
     <div class="form__order-settings">
       <div class="form__parameter">Тип</div>
 
-      <label class="field-radio">
-        <input class="field-radio__input" type="radio" name="field-radio" value="" checked>
-        <span class="field-radio__name">Аксессуар для интерьера</span>
-      </label>
+      <div class="form__wrapper-field-radio">
+        <label class="field-radio">
+          <input class="field-radio__input" type="radio" name="field-radio" value="" checked>
+          <span class="field-radio__name">Аксессуар для интерьера</span>
+        </label>
 
-      <label class="field-radio">
-        <input class="field-radio__input" type="radio" name="field-radio" value="">
-        <span class="field-radio__name">Детская игрушка</span>
-      </label>
+        <label class="field-radio">
+          <input class="field-radio__input" type="radio" name="field-radio" value="">
+          <span class="field-radio__name">Детская игрушка</span>
+        </label>
+      </div>
+
     </div>
 
-    <div class="form__order-settings">
+
+    <div class="form__order-settings  form__order-settings--gray-bg">
       <div class="form__parameter">Цвет</div>
 
-      <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="" checked>
-        <span class="field-checkbox__name">Белый</span>
-      </label>
+      <div class="form__wrapper-field-checkbox">
 
-      <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="" checked>
-        <span class="field-checkbox__name">Серый</span>
-      </label>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" value="" checked>
+          <span class="field-checkbox__name">Белый</span>
+        </label>
 
-      <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="">
-        <span class="field-checkbox__name">Тиффани</span>
-      </label>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" value="" checked>
+          <span class="field-checkbox__name">Серый</span>
+        </label>
 
-      <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="">
-        <span class="field-checkbox__name">Черный</span>
-      </label>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" value="">
+          <span class="field-checkbox__name">"Тиффани"</span>
+        </label>
 
-      <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="">
-        <span class="field-checkbox__name">Розовый</span>
-      </label>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" value="">
+          <span class="field-checkbox__name">Черный</span>
+        </label>
 
-      <label class="field-checkbox">
-        <input class="field-checkbox__input" type="checkbox" value="">
-        <span class="field-checkbox__name">Оранжевый</span>
-      </label>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" value="">
+          <span class="field-checkbox__name">Розовый</span>
+        </label>
+
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" value="">
+          <span class="field-checkbox__name">Оранжевый</span>
+        </label>
+      </div>
     </div>
 
     <div class="form__order-settings">
-      <div class="form__parameter">ФИО</div>
+      <div class="form__parameter  form__parameter--top">ФИО</div>
 
-      <label class="field-text">
-        <div class="field-text__name">Имя:</div>
-        <div class="field-text__input-wrap">
-          <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" required>
-        </div>
-      </label>
+      <div class="form__wrapper-field-text">
 
-      <label class="field-text">
-        <div class="field-text__name">Фамилия:</div>
-        <div class="field-text__input-wrap">
-          <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
-        </div>
-      </label>
+        <label class="field-text">
+          <div class="field-text__name">Имя:</div>
+          <div class="field-text__input-wrap">
+            <input class="field-text__input  field-text__input--long" type="text" name="name"
+                   placeholder="Введите ваше имя*" required>
+          </div>
+        </label>
 
-      <label class="field-text">
-        <div class="field-text__name">Отчество:</div>
-        <div class="field-text__input-wrap">
-          <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
-        </div>
-      </label>
+        <label class="field-text">
+          <div class="field-text__name">Фамилия:</div>
+          <div class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+          </div>
+        </label>
+
+        <label class="field-text">
+          <div class="field-text__name">Отчество:</div>
+          <div class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
+          </div>
+        </label>
+      </div>
     </div>
 
-    <div class="form__tel">
-      <div class="form__parameter">Тел</div>
+    <div class="form__wrapper-tel-email  form__tel--gray-bg">
 
-      <label class="field-text">
-        <div class="field-text__input-wrap">
-          <input class="field-text__input  field-text__input--picture-tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-        </div>
-      </label>
+      <div class="form__tel">
+        <div class="form__parameter">Тел</div>
+        <label class="field-text">
+          <div class="field-text__input-wrap">
+            <input class="field-text__input  field-text__input--picture-tel" type="tel" name="tel"
+                   placeholder="+7 XXX XX XX*" required>
+          </div>
+        </label>
+      </div>
+
+      <div class="form__email">
+        <div class="form__parameter">E-mail</div>
+
+        <label class="field-text">
+          <div class="field-text__input-wrap">
+            <input class="field-text__input  field-text__input--picture-email" type="email" name="email"
+                   placeholder="Ваш Email*" required>
+          </div>
+        </label>
+      </div>
     </div>
 
-    <div class="form__email">
-      <div class="form__parameter">E-mail</div>
+    <div class="form__wrapper-additionaly">
 
-      <label class="field-text">
-        <div class="field-text__input-wrap">
-          <input class="field-text__input  field-text__input--picture-email" type="email" name="email" placeholder="Ваш Email*" required>
-        </div>
-      </label>
+      <div class="form__additionally">
+        <div class="form__parameter">Доп</div>
+
+        <label class="field-textarea">
+          <div class="field-textarea__input-wrap">
+            <textarea class="field-textarea__input" name="additionally"
+                      placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </label>
+      </div>
+
+      <span class="form__warning">*Поля обязательны для заполнения</span>
+
+      <div class="form__submit-order">
+        <input class="form__submit-order  form__submit-order--btn  btn" type="submit" value="Отправить заказ">
+      </div>
     </div>
 
-    <div class="form__additionally">
-      <div class="form__parameter">Доп</div>
-
-      <label class="field-textarea">
-        <div class="field-textarea__input-wrap">
-          <textarea class="field-textarea__input" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </div>
-      </label>
-    </div>
-
-    <span class="form__warning">*Поля обязательны для заполнения</span>
-
-    <div class="form__submit-order">
-      <input class="form__submit-order  btn" type="submit" value="Отправить заказ">
-    </div>
   </form>
 </main>
 
 <footer class="page-footer">
+  <a class="page-footer__logo" href="">
+    <img src="./img/logo-footer.svg" width="102" height="34" alt="Mishka">
+  </a>
+
   <div class="page-footer__social">
     <div class="social-links">
       <a class="social-link  social-link--instagram" href="https://www.instagram.com/htmlacademy">Instagram</a>
@@ -163,6 +209,8 @@
     <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </div>
 </footer>
+
+<script src="js/javascript.min.js"></script>
 
 </body>
 </html>
