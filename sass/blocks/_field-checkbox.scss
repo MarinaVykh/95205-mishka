@@ -59,3 +59,46 @@
   }
 
 }
+
+@media ($tablet-width) {
+  .field-checkbox {
+    margin-bottom: 55px;
+    margin-right: 100px;
+
+  }
+
+  .field-checkbox__name {
+    width: 150px;
+    left: 70px;
+    font-size: $size--font--xx-medium;
+    line-height: 18px;
+
+    &::before {
+      top: -16px;
+      left: -90px;
+      width: 50px;
+      height: 50px;
+
+    }
+
+    &::after {
+      top: 2px;
+      left: -75px;
+      width: 24px;
+      height: 10px;
+
+    }
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .field-checkbox {
+    margin-bottom: 0;
+
+  }
+
+}
+
+

@@ -1,12 +1,34 @@
 .form {
+  display: block;
   width: 320px;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+}
+
+.form__title {
+  min-height: 180px;
+  margin: 0 -30px 20px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: $color--gray;
+
+}
+
+.form__title-text {
+  font-size: $size--font-x-large;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color--font-dark;
+  text-align: center;
 
 }
 
 .form__text {
-  margin-bottom: 30px;
+  width: 240px;
+  margin-bottom: 20px;
   font-size: $size--font-xx-small;
+  line-height: 24px;
   color: $color--font-gray;
 
 }
@@ -45,7 +67,257 @@
 }
 
 .form__submit-order {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   background-color: $color--white;
+
+}
+
+@media ($tablet-width) {
+  .form {
+    width: 768px;
+    padding: 0;
+
+  }
+
+  .form__title {
+    position: relative;
+    min-height: 225px;
+    margin: 0 0 70px 0;
+    padding-top: 60px;
+    text-align: center;
+    background-color: $color--gray;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 768px 34px;
+      width: 768px;
+      height: 34px;
+      left: 0;
+      right: 0;
+      top: 209px;
+
+    }
+
+  }
+
+  .form__title-text {
+    font-size: $size--font-xx-large;
+    line-height: 50px;
+
+  }
+
+  .form__text {
+    width: 615px;
+    margin: 0 50px;
+    font-size: $size--font-medium;
+    line-height: 30px;
+
+  }
+
+  .form__order-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 305px;
+    margin: 0;
+    padding: 70px 50px 0;
+
+  }
+
+  .form__order-settings--small-height {
+    height: 250px;
+
+  }
+
+  .form__order-settings--gray-bg {
+    background-color: $color--gray;
+
+  }
+
+  .form__parameter {
+    align-self: flex-start;
+    min-width: 60px;
+    margin-right: 120px;
+
+    &::after {
+      border-bottom: none;
+
+    }
+
+  }
+
+  .form__wrapper-field-radio {
+    align-self: flex-start;
+
+  }
+
+  .form__wrapper-field-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    min-width: 500px;
+    height: 205px;
+
+  }
+
+  .form__wrapper-field-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 538px;
+
+  }
+
+  .form__wrapper-tel-email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 226px;
+    padding: 30px 0 0 50px;
+
+  }
+
+  .form__tel {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .form__email {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .form__tel--gray-bg {
+    background-color: $color--gray;
+
+  }
+
+  .form__wrapper-additionaly {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+
+  }
+
+  .form__additionally {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+
+  }
+
+  .form__warning {
+    order: 4;
+    margin-right: 50px;
+    margin-top: 12px;
+    font-size: $size--font-medium;
+    line-height: 30px;
+
+  }
+
+  .form__submit-order {
+    order: 3;
+    width: 230px;
+
+  }
+
+  .form__submit-order--btn {
+    margin-left: 50px;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .form {
+    width: 1150px;
+
+  }
+
+  .form__title {
+    min-height: 252px;
+    margin-bottom: 85px;
+    padding-top: 55px;
+
+    &::after {
+      background-size: 1150px 34px;
+      width: 1150px;
+      height: 34px;
+      left: 0;
+      right: 0;
+      top: 235px;
+
+    }
+
+  }
+
+  .form__title-text {
+    font-size: $size--font-xxx-large;
+    line-height: 57px;
+
+  }
+
+  .form__text {
+    width: 700px;
+    margin: 0 110px;
+
+  }
+
+  .form__order-settings {
+    align-items: flex-start;
+    padding: 65px 110px 0;
+
+  }
+
+  .form__parameter {
+    margin-right: 75px;
+
+  }
+
+  .form__order-settings--gray-bg {
+    height: 230px;
+    padding: 50px 110px 0;
+
+  }
+
+  .form__wrapper-field-checkbox {
+    align-self: center;
+    height: 155px;
+
+  }
+
+  .form__wrapper-field-text {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+  }
+
+  .form__wrapper-tel-email {
+    padding: 20px 0 20px 110px;
+
+  }
+
+  .form__additionally {
+    margin-left: 110px;
+
+  }
+
+  .form__warning {
+    margin-right: 225px;
+
+  }
+
+  .form__submit-order--btn {
+    margin-left: 243px;
+
+  }
 
 }

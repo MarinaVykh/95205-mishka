@@ -53,3 +53,71 @@
   border-bottom: 2px solid $color--light-turquoise;
 
 }
+
+@media ($tablet-width) {
+  .field-text {
+    width: 538px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px 0 0;
+
+  }
+
+  .field-text__name {
+    margin: 0 25px 60px -15px;
+    font-size: $size--font--xx-medium;
+    line-height: 18px;
+
+  }
+
+  .field-text__input {
+    min-width: 374px;
+    padding: 0 0 12px 20px;
+    font-size: $size--font--xx-medium;
+    line-height: 18px;
+
+  }
+
+  .field-text__input--long {
+    width: 428px;
+
+  }
+
+  .field-text__input--picture-tel {
+    width: 487px;
+    background-color: $color--gray;
+
+  }
+
+  .field-text__input--picture-email {
+    width: 487px;
+    background-color: $color--gray;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .field-text__input {
+    min-width: 570px;
+
+  }
+
+  .field-text__input--long {
+    width: 620px;
+
+  }
+
+  .field-text__input--picture-tel {
+    width: 680px;
+
+  }
+
+  .field-text__input--picture-email {
+    width: 680px;
+
+  }
+
+}

@@ -24,6 +24,12 @@
     position: relative;
 
   }
+
+  &--flower {
+    padding-right: 70px;
+
+  }
+
   &--flower::before {
     width: 33px;
     height: 38px;
@@ -32,6 +38,12 @@
     bottom: 20px;
 
   }
+
+  &--style {
+    padding-right: 40px;
+
+  }
+
   &--style::before {
     width: 47px;
     height: 28px;
@@ -40,6 +52,12 @@
     bottom: 20px;
 
   }
+
+  &--heart {
+    padding-right: 80px;
+
+  }
+
   &--heart::before {
     width: 33px;
     height: 28px;
@@ -48,6 +66,12 @@
     bottom: 20px;
 
   }
+
+  &--clew {
+    padding-right: 50px;
+
+  }
+
   &--clew::before {
     width: 35px;
     height: 35px;
@@ -56,6 +80,7 @@
     bottom: 20px;
 
   }
+
   &--rocket::before {
     width: 54px;
     height: 23px;
@@ -64,12 +89,120 @@
     bottom: 20px;
 
   }
+
+  &--present {
+    padding-right: 50px;
+
+  }
+
   &--present::before {
     width: 33px;
     height: 33px;
     background-image: url('../../img/icon-feature-6.svg');
     background-repeat: no-repeat;
     bottom: 20px;
+  }
+
+}
+
+@media ($tablet-width) {
+  .about-us {
+    width: 768px;
+    margin: 0;
+    padding: 0 50px;
+
+  }
+
+  .about-us__title {
+    margin-top: 85px;
+    font-size: $size--font-xx-large;
+    line-height: 50px;
+
+  }
+
+  .about-us__item-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+  }
+
+  .about-us__item {
+    width: 50%;
+    font-size: $size--font-xxx-medium;
+    line-height: 24px;
+
+    &--flower {
+      order: 1;
+      padding-right: 110px;
+
+    }
+    &--style {
+      order: 3;
+      padding-right: 75px;
+
+    }
+    &--heart {
+      order: 5;
+      padding-right: 95px;
+
+    }
+    &--clew {
+      order: 2;
+      padding-right: 70px;
+
+    }
+    &--rocket {
+      order: 4;
+
+    }
+    &--present {
+      order: 6;
+
+    }
+
+  }
+}
+
+@media ($desktop-width) {
+  .about-us {
+    width: 1150px;
+    padding-left: 170px;
+
+  }
+
+  .about-us__title {
+    font-size: $size--font-xxx-large;
+    line-height: 57px;
+
+  }
+
+  .about-us__item {
+    width: 35%;
+
+    &--flower {
+      order: 1;
+      padding-right: 100px;
+
+    }
+    &--style {
+      order: 3;
+      padding-right: 70px;
+
+    }
+    &--heart {
+      order: 5;
+      padding-right: 90px;
+
+    }
+
+    &--present {
+      order: 6;
+      padding-right: 80px;
+
+    }
+
   }
 
 }

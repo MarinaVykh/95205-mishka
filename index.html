@@ -11,84 +11,129 @@
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo" href="">
-    <img src="./img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-  </a>
+  <div class="page-header__logo">
+    <a class="page-header__logo-link" href="index.html">
+
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Mishka">
+      </picture>
+
+    </a>
+  </div>
 
   <nav class="main-nav  main-nav--closed  main-nav--nojs">
 
     <span class="main-nav__toggle"></span>
 
-    <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="">Каталог товаров</a></li>
-      <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
-      <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
-      <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: пока пуста</a></li>
-    </ul>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+      </ul>
+
+      <ul class="main-nav__user-list">
+        <li class="main-nav__user-item  main-nav__user-item--search"><a href="">Поиск по сайту</a></li>
+        <li class="main-nav__user-item  main-nav__user-item--basket"><a href="">Корзина: пока пуста</a></li>
+      </ul>
+
+      <ul class="main-nav__desktop-list">
+        <li class="main-nav__desktop-item  main-nav__new"><a href="">Новые поступления</a></li>
+        <li class="main-nav__desktop-item  main-nav__sales"><a href="">Распродажа</a></li>
+      </ul>
+
+    </div>
 
   </nav>
+
+  <span class="page-header__delivery-info">Бесплатная доставка по России</span>
 </header>
 
 
 <main class="page-main">
+
   <div class="page-main__slogan">
-    <h1 class="page-main__slogan-text">Милые штуки ручной работы для дома</h1>
+    <h1 class="page-main__slogan-text">Милые штуки ручной<br> работы для дома</h1>
+
+    <ul class="product-types">
+      <a href="home-furnishings.html">
+        <li class="product-types__item  product-types__item--home-furnishings">Предметы<br>интерьера</li>
+      </a>
+
+      <a href="kids-toys.html">
+        <li class="product-types__item  product-types__item--kids-toys">Детские<br> игрушки</li>
+      </a>
+    </ul>
   </div>
 
-  <ul class="product-types">
-    <li class="product-types__item  product-types__item--home-furnishings"><a href="home-furnishings.html">Предметы<br>
-      интерьера</a>
-    </li>
-    <li class="product-types__item  product-types__item--kids-toys"><a href="kids-toys.html">Детские<br> игрушки</a>
-    </li>
-  </ul>
-
   <section class="product-of-week">
-    <h1 class="product-of-week__title">Вязаные корзинки</h1>
+    <div class="product-of-week__header">
+      <h1 class="product-of-week__title">Вязаные корзинки</h1>
 
-    <span class="product-of-week__lable">Товар недели</span>
+      <span class="product-of-week__lable">Товар недели</span>
+    </div>
 
-    <p class="product-of-week__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
-      размерах.</p>
+    <div class="product-of-week__main">
 
-    <table class="product-of-week__parameters">
-      <tr>
-        <td class="product-of-week__parameter">Цвет:</td>
-        <td class="product-of-week__parameter-name">"Тиффани"/серый</td>
-      </tr>
-      <tr>
-        <td class="product-of-week__parameter">Диаметр:</td>
-        <td class="product-of-week__parameter-name">25см</td>
-      </tr>
-      <tr>
-        <td class="product-of-week__parameter">Высота:</td>
-        <td class="product-of-week__parameter-name">15см</td>
-      </tr>
-    </table>
+      <div class="product-of-week__main-wrapper">
+        <p class="product-of-week__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
+          размерах.</p>
 
-    <a href="" class="product-of-week__picture">
-      <img src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели">
-    </a>
+        <table class="product-of-week__parameters">
+          <tr>
+            <td class="product-of-week__parameter">Цвет:</td>
+            <td class="product-of-week__parameter-name">"Тиффани"/серый</td>
+          </tr>
+          <tr>
+            <td class="product-of-week__parameter">Диаметр:</td>
+            <td class="product-of-week__parameter-name">25см</td>
+          </tr>
+          <tr>
+            <td class="product-of-week__parameter">Высота:</td>
+            <td class="product-of-week__parameter-name">15см</td>
+          </tr>
+        </table>
+      </div>
 
-    <div class="product-of-week__price">Цена: 990 руб.</div>
+      <div class="product-of-week__photo-wrapper">
+        <a href="">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.jpg 2x, img/triple-set-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@2x.jpg 2x, img/triple-set-tablet@1x.jpg 1x">
 
-    <a href="" class="product-of-week__order  btn">Заказать</a>
+            <img class="product-of-week__picture" srcset="img/triple-set-mobile@2x.jpg 2x, img/triple-set-mobile@1x.jpg 1x" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+
+          </picture>
+        </a>
+      </div>
+
+      <div class="product-of-week__order-wrapper">
+        <div class="product-of-week__price">Цена: 990 руб.</div>
+
+        <a href="" class="product-of-week__order  btn">Заказать</a>
+      </div>
+    </div>
+
   </section>
+
 
   <section class="about-us">
     <h1 class="about-us__title">Коротко о нас:</h1>
 
-    <span class="about-us__item  about-us__item--flower">Экологически чистые материалы</span>
+    <div class="about-us__item-wrapper">
+      <span class="about-us__item  about-us__item--flower">Экологически чистые материалы</span>
 
-    <span class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</span>
+      <span class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</span>
 
-    <span class="about-us__item  about-us__item--heart">Увеличивает лайки на фотографиях</span>
+      <span class="about-us__item  about-us__item--heart">Увеличивает лайки на фотографиях</span>
 
-    <span class="about-us__item  about-us__item--clew">Связано вручную с любовью и умилением</span>
+      <span class="about-us__item  about-us__item--clew">Связано вручную с любовью и умилением</span>
 
-    <span class="about-us__item  about-us__item--rocket">Поддержка отечественного производителя</span>
+      <span class="about-us__item  about-us__item--rocket">Поддержка отечественного производителя</span>
 
-    <span class="about-us__item  about-us__item--present">Поставляется в подарочной упаковке</span>
+      <span class="about-us__item  about-us__item--present">Поставляется в подарочной упаковке</span>
+    </div>
   </section>
 
   <section class="reviews">
@@ -118,41 +163,46 @@
     </div>
 
     <div class="reviews__switch">
-      <a href="" class="reviews__switch  reviews__switch--left"></a>
-      <a href="" class="reviews__switch  reviews__switch--right"></a>
+      <a href="" class="reviews__switch  reviews__switch--left">Предыдущий отзыв</a>
+      <a href="" class="reviews__switch  reviews__switch--right">Следующий отзыв</a>
     </div>
 
     <a href="" class="reviews__write  btn">Написать</a>
   </section>
 
   <section class="contacts">
-    <h2 class="contacts__title">Контакты</h2>
+    <div class="contacts__info-wrapper">
+      <h2 class="contacts__title">Контакты</h2>
 
-    <div class="contacts__items">
-      <div class="contacts__item">
-        <div class="contacts__item-name">e-mail:</div>
-        <a class="contacts__item-value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      </div>
-
-      <div class="contacts__item">
-        <div class="contacts__item-name">адрес:</div>
-        <div class="contacts__item-value  contacts__item-value--not-border">г. Санкт-Петербург, ул. Большая Конюшенная,
-          д. 19/8, офис 101
-        </div>
-      </div>
+      <table class="contacts__items">
+        <tr class="contacts__item">
+          <td class="contacts__item-name">e-mail:</td>
+          <td class="contacts__item-value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+        </tr>
+        <tr class="contacts__item">
+          <td class="contacts__item-name">адрес:</td>
+          <td class="contacts__item-value  contacts__item-value--display">г. Санкт-Петербург, ул. Большая Конюшенная, д.&nbsp;19/8,
+            офис 101
+          </td>
+        </tr>
+      </table>
     </div>
 
-    <div class="contacts__map">
-      <iframe
-        src="./img/map-mobile@1x.jpg" width="320" height="457" frameborder="" style="border:0" allowfullscreen>
-      </iframe>
-    </div>
+    <picture class="contacts__map">
+      <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+      <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+      <img src="img/map-mobile@1x.jpg" alt="Карта">
+    </picture>
 
     <a href="" class="contacts__write-us  btn">Напишите нам</a>
   </section>
 </main>
 
 <footer class="page-footer">
+  <a class="page-footer__logo" href="">
+    <img src="./img/logo-footer.svg" width="102" height="34" alt="Mishka">
+  </a>
+
   <div class="page-footer__social">
     <div class="social-links">
       <a class="social-link  social-link--instagram" href="https://www.instagram.com/htmlacademy">Instagram</a>
@@ -191,6 +241,8 @@
 
   <input type="submit" value="Добавить" class="btn  add-basket__btn">
 </form>
+
+<script src="js/javascript.min.js"></script>
 
 </body>
 </html>

@@ -5,8 +5,70 @@
 }
 
 .page-header__logo {
-  display: block;
-  padding: 20px 115px;
+  padding: 22px 0;
+  text-align: center;
   border-bottom: 1px solid $color--devider;
+
+}
+
+.page-header__logo-link {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+
+}
+
+.page-header__delivery-info  {
+  display: none;
+
+}
+
+@media ($tablet-width) {
+  .page-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+
+  }
+
+  .page-header__logo {
+    width: 370px;
+    padding: 22px 0 0 50px;
+    text-align: start;
+
+  }
+
+  .page-header__delivery-info  {
+    position: absolute;
+    display: block;
+    top: 110px;
+    right: 50px;
+    font-size: $size--font-small;
+    line-height: 24px;
+    color: $color--font-gray;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .page-header {
+    width: 1150px;
+
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 1;
+    width: 149px;
+    height: 73px;
+    padding: 0;
+    top: 10px;
+    left: 500px;
+    border: none;
+
+  }
 
 }

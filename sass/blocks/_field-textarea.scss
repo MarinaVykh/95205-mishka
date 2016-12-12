@@ -19,3 +19,36 @@
   border: 2px solid $color--light-turquoise;
 
 }
+
+@media ($tablet-width) {
+  .field-textarea {
+    width: 487px;
+    margin-right: 50px;
+
+  }
+
+  .field-textarea__input-wrap {
+    margin: 0;
+
+  }
+
+  .field-textarea__input {
+    width: 487px;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .field-textarea {
+    width: 680px;
+    margin: 0;
+
+  }
+
+  .field-textarea__input {
+    width: 680px;
+
+  }
+
+}
