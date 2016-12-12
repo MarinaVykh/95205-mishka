@@ -1,16 +1,30 @@
 .add-basket {
+  position: fixed;
+  display: none;
   width: 320px;
   height: 340px;
+  top: 50%;
   margin: 0 auto;
   background-color: $color--white;
   border-top: 1px solid $color--devider;
+  transform: translateY(-50%);
+  box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+
+}
+
+.add-basket--show {
+  display: block;
 
 }
 
 .add-basket__title {
+  width: 152px;
   margin-top: 30px;
+  margin-left: 85px;
   margin-bottom: 20px;
   font-size: $size--font-large;
+  line-height: 30px;
   font-weight: bold;
   text-align: center;
   color: $color--font-black;
@@ -22,6 +36,7 @@
   display: block;
   margin-bottom: 30px;
   font-size: $size--font-small;
+  line-height: 30px;
   text-align: center;
   color: $color--font-gray;
 
@@ -53,8 +68,8 @@
   display: inline-block;
   width: 78px;
   height: 50px;
-  line-height: 50px;
   font-size: $size--font-medium;
+  line-height: 50px;
   font-weight: bold;
   text-align: center;
   color: $color--font-gray;
@@ -92,5 +107,67 @@
   background-color: $color--turquoise;
   color: $color--font-white;
   border: none;
+
+}
+
+@media ($tablet-width) {
+  .add-basket {
+    width: 568px;
+    min-height: 336px;
+    left: 13%;
+    border: 1px solid $color--devider;
+
+  }
+
+  .add-basket__title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 30px;
+    line-height: 57px;
+
+  }
+
+  .add-basket__text {
+    font-size: $size--font-medium;
+    line-height: 30px;
+
+  }
+
+  .add-basket__items {
+    margin: 0 105px 30px 105px;
+
+  }
+
+  .add-basket__item-name-text {
+    width: 112px;
+    height: 52px;
+
+    &::before {
+      width: 110px;
+      height: 50px;
+
+    }
+
+    &::after {
+      width: 110px;
+      height: 50px;
+
+    }
+
+  }
+
+  .add-basket__btn {
+    margin-left: 105px;
+    width: 358px;
+
+  }
+
+}
+
+@media ($desktop-width) {
+  .add-basket {
+    left: 33%;
+
+  }
 
 }

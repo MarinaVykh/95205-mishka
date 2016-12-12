@@ -51,6 +51,16 @@
   font-weight: bold;
   color: $color--font-black;
 
+  &:hover {
+    color: #8d8d8d
+
+  }
+
+  &:active {
+    color: #cacaca;
+
+  }
+
 }
 
 .main-nav__user-item--search a {
@@ -62,10 +72,20 @@
     position: absolute;
     width: 17px;
     height: 17px;
-    background-image: url('../../img/icon-search.svg');
+    background-image: url('../../img/icon-search-gray.svg');
     background-repeat: no-repeat;
     top: 3px;
     left: -50px;
+
+  }
+
+  &:hover::before {
+    background-image: url('../../img/icon-search-green.svg');
+
+  }
+
+  &:active::before {
+    background-image: url('../../img/icon-search-light-green.svg');
 
   }
 
@@ -80,10 +100,20 @@
     position: absolute;
     width: 20px;
     height: 19px;
-    background-image: url('../../img/icon-cart.svg');
+    background-image: url('../../img/icon-cart-gray.svg');
     background-repeat: no-repeat;
     top: 3px;
     left: -50px;
+
+  }
+
+  &:hover::before {
+    background-image: url('../../img/icon-cart-green.svg');
+
+  }
+
+  &:active::before {
+    background-image: url('../../img/icon-cart-light-green.svg');
 
   }
 
