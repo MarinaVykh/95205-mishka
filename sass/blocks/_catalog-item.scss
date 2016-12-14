@@ -104,6 +104,7 @@
 
   .catalog-item__value {
     width: 50%;
+    min-height: 195px;
     padding: 0;
 
   }
@@ -119,17 +120,20 @@
 
   .catalog-item__value-parameters {
     width: 270px;
-    //min-height: 180px;
     margin: 5px 0 0 30px;
-    padding: 0;
+    padding: 0 0 180px 0;
     font-size: $size--font-small;
     line-height: 30px;
 
   }
 
+  .catalog-item__value-parameters--small-padding {
+    padding-bottom: 155px;
+
+  }
+
   .catalog-item__value-price {
-    margin: 20px 0 0 30px;
-    padding: 0;
+    padding: 22px 0 0 30px;
     font-size: $size--font-medium;
 
   }
@@ -157,12 +161,28 @@
 
   .catalog-item__value {
     width: 100%;
+    min-height: 195px;
     padding: 0;
 
   }
 
   .catalog-item__value-title {
     padding-right: 50px;
+
+  }
+
+  .catalog-item__value-parameters {
+    padding-bottom: 42px;
+
+  }
+
+  .catalog-item__value-parameters--small-padding {
+    padding-bottom: 18px;
+
+  }
+
+  .catalog-item__to-basket {
+    margin: 20px 18px 0 0;
 
   }
 
