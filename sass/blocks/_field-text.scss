@@ -21,7 +21,7 @@
   border-bottom: 2px solid $color--font-black;
 
   &--picture-tel {
-    background-image: url(../../img/icon-phone-gray.svg);
+    background-image: url(../img/icon-phone-gray.svg);
     background-repeat: no-repeat;
     background-size: 25px 24px;
     background-position: right 0;
@@ -29,7 +29,7 @@
   }
 
   &--picture-email {
-    background-image: url('../../img/icon-mail-gray.svg');
+    background-image: url('../img/icon-mail-gray.svg');
     background-repeat: no-repeat;
     background-size: 25px 24px;
     background-position: right 0;
@@ -39,12 +39,12 @@
 }
 
 .field-text__input--picture-tel:hover, .field-text__input--picture-tel:focus {
-  background-image: url('../../img/icon-phone-green.svg');
+  background-image: url('../img/icon-phone-green.svg');
 
 }
 
 .field-text__input--picture-email:hover, .field-text__input--picture-email:focus {
-  background-image: url('../../img/icon-mail-green.svg');
+  background-image: url('../img/icon-mail-green.svg');
 
 }
 

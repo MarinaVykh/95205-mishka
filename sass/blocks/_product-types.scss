@@ -19,7 +19,7 @@
 
   &--home-furnishings {
     background-color: $color--turquoise;
-    background-image: url('../../img/icon-interior.svg');
+    background-image: url('../img/icon-interior.svg');
     background-repeat: no-repeat;
     background-size: 40px 63px;
     background-position: 87%;
@@ -32,19 +32,19 @@
   }
 
   &--home-furnishings:hover {
-    background-image: url('../../img/icon-interior-hover.svg');
+    background-image: url('../img/icon-interior-hover.svg');
 
   }
 
   &--home-furnishings:active {
-    background-image: url('../../img/icon-interior-active.svg');
+    background-image: url('../img/icon-interior-active.svg');
     color: #97e2d2;
 
   }
 
   &--kids-toys {
     background-color: $color--dark-turquoise;
-    background-image: url('../../img/icon-toy.svg');
+    background-image: url('../img/icon-toy.svg');
     background-repeat: no-repeat;
     background-size: 60px 60px;
     background-position: 90%;
@@ -57,12 +57,12 @@
   }
 
   &--kids-toys:hover {
-    background-image: url('../../img/icon-toy-hover.svg');
+    background-image: url('../img/icon-toy-hover.svg');
 
   }
 
   &--kids-toys:active {
-    background-image: url('../../img/icon-toy-active.svg');
+    background-image: url('../img/icon-toy-active.svg');
     color: #8dd5c9;
 
   }

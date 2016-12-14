@@ -5,7 +5,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url("../../img/bg-zigzag-line.svg");
+    background: url('../img/bg-zigzag-line.svg');
     background-repeat: repeat-x;
     background-size: 320px 7px;
     width: 100vw;
@@ -98,7 +98,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url('../../img/bg-zigzag-line.svg');
+      background: url('../img/bg-zigzag-line.svg');
       background-repeat: repeat-x;
       background-size: 768px 16px;
       width: 100vw;
@@ -206,7 +206,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url('../../img/bg-zigzag-line.svg');
+      background: url('../img/bg-zigzag-line.svg');
       background-repeat: repeat-x;
       background-size: 1150px 23px;
       width: 99.2vw;

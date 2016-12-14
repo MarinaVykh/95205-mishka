@@ -12,7 +12,7 @@
   display: block;
   width: 20px;
   height: 14px;
-  background-image: url('../../img/icon-menu-open.svg');
+  background-image: url('../img/icon-menu-open.svg');
   background-repeat: no-repeat;
 
 }
@@ -24,7 +24,7 @@
   display: block;
   width: 21px;
   height: 21px;
-  background-image: url('../../img/icon-menu-close.svg');
+  background-image: url('../img/icon-menu-close.svg');
   background-repeat: no-repeat;
 
 }
@@ -72,7 +72,7 @@
     position: absolute;
     width: 17px;
     height: 17px;
-    background-image: url('../../img/icon-search-gray.svg');
+    background-image: url('../img/icon-search-gray.svg');
     background-repeat: no-repeat;
     top: 3px;
     left: -50px;
@@ -80,12 +80,12 @@
   }
 
   &:hover::before {
-    background-image: url('../../img/icon-search-green.svg');
+    background-image: url('../img/icon-search-green.svg');
 
   }
 
   &:active::before {
-    background-image: url('../../img/icon-search-light-green.svg');
+    background-image: url('../img/icon-search-light-green.svg');
 
   }
 
@@ -100,7 +100,7 @@
     position: absolute;
     width: 20px;
     height: 19px;
-    background-image: url('../../img/icon-cart-gray.svg');
+    background-image: url('../img/icon-cart-gray.svg');
     background-repeat: no-repeat;
     top: 3px;
     left: -50px;
@@ -108,12 +108,12 @@
   }
 
   &:hover::before {
-    background-image: url('../../img/icon-cart-green.svg');
+    background-image: url('../img/icon-cart-green.svg');
 
   }
 
   &:active::before {
-    background-image: url('../../img/icon-cart-light-green.svg');
+    background-image: url('../img/icon-cart-light-green.svg');
 
   }
 

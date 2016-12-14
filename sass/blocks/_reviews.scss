@@ -6,7 +6,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url("../../img/bg-zigzag-line.svg");
+    background: url('../img/bg-zigzag-line.svg');
     background-repeat: repeat-x;
     background-size: 320px 7px;
     width: 100vw;
@@ -70,7 +70,7 @@
     float: left;
     width: 130px;
     height: 50px;
-    background-image: url('../../img/icon-left-arrow.svg');
+    background-image: url('../img/icon-left-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #ececec;
@@ -79,12 +79,12 @@
   }
 
   &--left:hover {
-    background-image: url('../../img/icon-left-arrow-hover.svg');
+    background-image: url('../img/icon-left-arrow-hover.svg');
 
   }
 
   &--left:active {
-    background-image: url('../../img/icon-left-arrow-active.svg');
+    background-image: url('../img/icon-left-arrow-active.svg');
 
   }
 
@@ -93,7 +93,7 @@
     float: left;
     width: 130px;
     height: 50px;
-    background-image: url('../../img/icon-right-arrow.svg');
+    background-image: url('../img/icon-right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #ececec;
@@ -102,12 +102,12 @@
   }
 
   &--right:hover {
-    background-image: url('../../img/icon-right-arrow-hover.svg');
+    background-image: url('../img/icon-right-arrow-hover.svg');
 
   }
 
   &--right:active {
-    background-image: url('../../img/icon-right-arrow-active.svg');
+    background-image: url('../img/icon-right-arrow-active.svg');
 
   }
 
@@ -127,14 +127,14 @@
     min-height: 457px;
     margin: 0;
     padding: 30px 50px 55px 50px;
-    background-image: url('../../img/review@1x.jpg');
+    background-image: url('../img/review@1x.jpg');
     background-repeat: no-repeat;
     background-size: 350px 457px;
 
     &::after {
       content: "";
       position: absolute;
-      background: url("../../img/bg-zigzag-line.svg");
+      background: url("../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
       background-size: 768px 16px;
       width: 100vw;
@@ -150,7 +150,7 @@
 
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background: url("../../img/review@2x.jpg");
+    background: url("../img/review@2x.jpg");
     background-repeat: no-repeat;
 
   }
