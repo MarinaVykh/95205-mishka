@@ -95,6 +95,11 @@
 
   }
 
+  &:hover::before {
+    border-color: #c7c7c7;
+
+  }
+
 }
 
 .add-basket__item-input:checked ~ .add-basket__item-name-text::after {

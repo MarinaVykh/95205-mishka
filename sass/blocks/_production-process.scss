@@ -4,6 +4,13 @@
   margin-bottom: 60px;
   border: 1px solid $color--devider;
 
+  &:hover {
+    box-shadow: 0 2px 35px -5px rgba(0, 0, 0, 0.5);
+  }
+  &:active {
+    box-shadow: 0 1px 17px -5px rgba(0, 0, 0, 0.5);
+  }
+
 }
 
 .production-process__title {
@@ -33,8 +40,26 @@
 
   }
 
-}
+  &:hover::before {
+    width: 121px;
+    height: 92px;
+    background-size: 121px 92px;
+    top: 32px;
+    left: 68px;
 
+  }
+
+  &:active::before {
+    width: 81px;
+    height: 62px;
+    background-size: 81px 62px;
+    top: 50px;
+    left: 90px;
+    opacity: 0.5;
+
+  }
+
+}
 
 .production-process__text {
   padding: 30px;
@@ -52,7 +77,19 @@
   text-align: center;
   color: $color--font-gray;
   text-transform: uppercase;
-  border: 2px solid $color--font-black;
+  border: 2px solid $color--font-gray;
+
+  &:hover {
+    background-color: #444444;
+    color: $color--white;
+
+  }
+
+  &:active {
+    background-color: #444444;
+    color: #8d8d8d;
+
+  }
 
 }
 
@@ -81,6 +118,18 @@
     &::before {
       top: 195px;
       left: 285px;
+
+    }
+
+    &:hover::before {
+      top: 185px;
+      left: 280px;
+
+    }
+
+    &:active::before {
+      top: 205px;
+      left: 300px;
 
     }
 
@@ -131,6 +180,18 @@
     &::before {
       top: 192px;
       left: 295px;
+
+    }
+
+    &:hover::before {
+      top: 185px;
+      left: 290px;
+
+    }
+
+    &:active::before {
+      top: 195px;
+      left: 310px;
 
     }
 
