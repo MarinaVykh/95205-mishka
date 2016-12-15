@@ -61,7 +61,6 @@
 
   .page-header__logo {
     position: absolute;
-    z-index: 1;
     width: 149px;
     height: 73px;
     padding: 0;
@@ -71,18 +70,26 @@
 
   }
 
+  .page-header__logo-link {
+    position: absolute;
+    z-index: 1;
+    width: 149px;
+    height: 73px;
 
-  .page-header__logo:hover span {
+  }
+
+  .page-header__logo-link:hover span {
     display: none;
 
   }
 
-  .page-header__logo:hover {
+  .page-header__logo-link:hover {
     background: url("../img/logo-desktop-hover.svg");
     width: 148px;
 
   }
-  .page-header__logo:active {
+
+  .page-header__logo-link:active {
     background: url("../img/logo-desktop-active.svg");
     width: 148px;
 

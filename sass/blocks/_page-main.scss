@@ -56,6 +56,12 @@
 
   }
 
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    
+  }
+
   .page-main__slogan-text {
     width: 500px;
     margin-bottom: 360px;

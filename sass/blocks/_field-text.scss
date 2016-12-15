@@ -5,10 +5,16 @@
 }
 
 .field-text__name {
+  display: block;
   margin-bottom: 25px;
   font-size: $size--font-medium;
   font-weight: bold;
   color: $color--font-black;
+
+}
+
+.field-text__input-wrap {
+  display: block;
 
 }
 

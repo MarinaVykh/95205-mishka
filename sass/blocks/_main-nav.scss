@@ -147,7 +147,14 @@
   }
 
   .main-nav--nojs .main-nav__toggle {
-    display: none;
+    position: absolute;
+    top: -55px;
+    right: 30px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-image: url('../img/icon-menu-close.svg');
+    background-repeat: no-repeat;
 
   }
 
