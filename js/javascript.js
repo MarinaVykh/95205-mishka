@@ -1,5 +1,5 @@
-var navMain = document .querySelector('.main-nav');
-var navToggle = document .querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -24,17 +24,14 @@ var modal = document.querySelector(".add-basket");
 
 buyLink.addEventListener("click", function (e) {
   e.preventDefault(),
-  modal.classList.add("add-basket--show"),
-  overlay.classList.add("modal-overlay--show")
+    modal.classList.add("add-basket--show"),
+    overlay.classList.add("modal-overlay--show")
 
 }),
 
   overlay.addEventListener("click", function (e) {
-  e.preventDefault(),
-  modal.classList.remove("add-basket--show"),
-  overlay.classList.remove("modal-overlay--show")
+    e.preventDefault(),
+      modal.classList.remove("add-basket--show"),
+      overlay.classList.remove("modal-overlay--show")
 
-});
-
-
-
+  });
