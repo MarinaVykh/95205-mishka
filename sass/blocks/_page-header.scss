@@ -71,4 +71,21 @@
 
   }
 
+
+  .page-header__logo:hover span {
+    display: none;
+
+  }
+
+  .page-header__logo:hover {
+    background: url("../img/logo-desktop-hover.svg");
+    width: 148px;
+
+  }
+  .page-header__logo:active {
+    background: url("../img/logo-desktop-active.svg");
+    width: 148px;
+
+  }
+
 }
