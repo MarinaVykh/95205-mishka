@@ -58,8 +58,10 @@
 
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background-image: url("../img/hero-desktop@2x.jpg");
-    
+    .page-main__slogan {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+
   }
 
   .page-main__slogan-text {

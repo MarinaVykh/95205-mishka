@@ -111,7 +111,6 @@
 
   }
 
-
 }
 
 .reviews__write {
@@ -150,8 +149,10 @@
 
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background: url('../img/review@2x.jpg');
-    background-repeat: no-repeat;
+    .reviews {
+      background-image: url('../img/review@2x.jpg');
+      background-repeat: no-repeat;
+    }
 
   }
 
